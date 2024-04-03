@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matching Game</title>  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Spanish Matching Game</h1>
+  <p>Drag the animal in English over the corresponding word</p>
+  <p>Arrastra el animal en inglés sobre la palabra que corresponda</p>
+
+  <main class="container">
+    <div>
+      <ul class="draggable-list">
+        <li id="e1" draggable="true"><img src="perro.jpg"><h4>Dog</h4></li>
+        <li id="e2" draggable="true">Cat</li>
+        <li id="e3" draggable="true">Lion</li>
+        <li id="e4" draggable="true">Snake</li>
+        <li id="e5" draggable="true">Wolf</li>
+      </ul>
+    </div>
+    <div>
+      <ul class="draggable-list">
+        <li id="s2" draggable="true">Gato</li>
+        <li id="s5" draggable="true">Lobo</li>
+        <li id="s1" draggable="true">Perro </li>
+        <li id="s3" draggable="true">León</li>
+        <li id="s4" draggable="true">Serpiente</li>
+      </ul>
+    </div>
+  </main>
+
+  <div id="endMessage">
+    <h3>Well done!</h3>
+    <h3>¡Bien hecho!</h3>
+    <table>
+      <tr>
+        <th>English</th>
+        <th>Spanish</th>
+      </tr>
+      <tr>
+        <td>Dog</td>
+        <td>Perro</td>
+      </tr>
+      <tr>
+        <td>Cat</td>
+        <td>Gato</td>
+      </tr>
+      <tr>
+        <td>Lion</td>
+        <td>León</td>
+      </tr>
+      <tr>
+        <td>Snake</td>
+        <td>Serpiente</td>
+      </tr>
+      <tr>
+        <td>Wolf</td>
+        <td>Lobo</td>
+      </tr>
+    </table>
+
+    <button onclick="playAgain()">Play Again</button>
+  </div>
+
+  <script src="script.js"></script>
+
+  
+</body>
+</html>
